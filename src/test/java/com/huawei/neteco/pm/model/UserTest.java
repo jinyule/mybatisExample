@@ -48,7 +48,7 @@ public class UserTest
         ScriptRunner runner = new ScriptRunner(conn);
         runner.setLogWriter(null);
         runner.runScript(reader);
-        reader.close(); 
+        reader.close();
         session.close();
     }
 
