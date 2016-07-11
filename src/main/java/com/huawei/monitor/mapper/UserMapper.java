@@ -1,6 +1,6 @@
-package com.huawei.neteco.pm.mapper;
+package com.huawei.monitor.mapper;
 
-import com.huawei.neteco.pm.model.User;
+import com.huawei.monitor.model.User;
 
 /**
  * Created by terminator on 2016/5/20.
@@ -11,5 +11,5 @@ import com.huawei.neteco.pm.model.User;
  */
 public interface UserMapper {
 
-    public User getUser(Integer id);
+    User getUser(Integer id);
 }

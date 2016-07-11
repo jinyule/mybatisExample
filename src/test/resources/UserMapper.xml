@@ -3,9 +3,9 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.huawei.neteco.pm.mapper.UserMapper">
+<mapper namespace="com.huawei.monitor.mapper.UserMapper">
 
-    <select id="getUser" resultType="com.huawei.neteco.pm.model.User">
+    <select id="getUser" resultType="com.huawei.monitor.model.User">
         select * from users
     </select>
 

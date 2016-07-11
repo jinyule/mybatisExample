@@ -1,4 +1,4 @@
-package com.huawei.neteco.pm.model;
+package com.huawei.monitor.model;
 
 /**
  * Created by terminator on 2016/5/20.

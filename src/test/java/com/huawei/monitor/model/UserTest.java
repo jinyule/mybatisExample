@@ -1,6 +1,6 @@
-package com.huawei.neteco.pm.model;
+package com.huawei.monitor.model;
 
-import com.huawei.neteco.pm.mapper.UserMapper;
+import com.huawei.monitor.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.jdbc.ScriptRunner;
 import org.apache.ibatis.session.SqlSession;
