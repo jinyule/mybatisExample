@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+
+        <encoder charset="UTF-8">
+
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n
+            </pattern>
+
+        </encoder>
+
+    </appender>
+
+    <!-- 把代码里的日志级别调为debug级别 -->
+
+    <logger name="com.monitor" level="DEBUG">
+
+    </logger>
+
+    <!-- 就是这个监控了mybatis日志输出，配合上面的“dao” -->
+
+    <logger name="dao" level="DEBUG"/>
+
+    <!-- 这个是日志总控制开关，这里面我把“debug“加上去 ，所以上面那个注释的就不要-->
+
+    <root level="DEBUG">
+
+        <appender-ref ref="STDOUT"/>
+
+    </root>
+
+</configuration>

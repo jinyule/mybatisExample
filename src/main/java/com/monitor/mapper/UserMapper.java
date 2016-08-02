@@ -1,6 +1,6 @@
-package com.huawei.monitor.mapper;
+package com.monitor.mapper;
 
-import com.huawei.monitor.model.User;
+import com.monitor.model.User;
 
 /**
  * Created by terminator on 2016/5/20.
@@ -12,4 +12,6 @@ import com.huawei.monitor.model.User;
 public interface UserMapper {
 
     User getUser(Integer id);
+
+    int updateOrSaveUser(User user);
 }

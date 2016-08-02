@@ -1,6 +1,6 @@
-package com.huawei.monitor.model;
+package com.monitor.model;
 
-import com.huawei.monitor.mapper.UserMapper;
+import com.monitor.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.jdbc.ScriptRunner;
 import org.apache.ibatis.session.SqlSession;
@@ -58,6 +58,12 @@ public class UserTest
             UserMapper mapper = sqlSession.getMapper(UserMapper.class);
             User user = mapper.getUser(1);
             assertEquals("User1", user.getName());
+
+            /*User user1 = new User();
+            user1.setId(1);
+            user1.setName("User22");
+            mapper.updateOrSaveUser(user1);
+            assertEquals("User22", mapper.getUser(1).getName());*/
         } finally
         {
             sqlSession.close();
